@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto sans-serif";
+}
+
+header {
+    display: flex;
+    width: 100%;
+    z-index: 115;
+}
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+}
+
+
+
+
+
+.copy-header {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    right: 100px;
+    top: 0;
+}
+
+.hamburger-button {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.main-navbar {
+    display: none;
+}
+
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contenedor,
+.articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.articulos {
+    margin: 10px;
+    background-color: white;
+   
+    max-width: 400px;
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+}
+
+
+.articulos img {
+    width: 100%
+}
+
+.subcaja-articulos {
+    border-top: solid 1px #ebebeb;
+    margin: 15px;
+    width: 100%;
+    position: relative;
+}
+
+
+
+.site {
+    display: none;
+}
+
+
+
+
+.fas.fa-truck {
+    color: chartreuse;
+    margin: 0%;
+    justify-content: flex-end;
+    position: absolute;
+    top: -700%;
+    left: 150%;
+    transition: transform 1s;
+}
+.fas.fa-truck:hover{
+    transform: rotate(-90deg);
+}
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: chartreuse;
+}
+
+.cuerpoTexto {
+    font-size: 16px;
+    text-align: center;
+}
+
+.hamburger-bottom {
+    color: white;
+    background-color: #03264c;
+    display: block;
+    font-size: 18px;
+    max-width: 50px;
+    border-radius: 8px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.iconos {
+    color: blue;
+    font-size: 30px;
+}
+
+.imagenes {
+    width: 100%;
+    height: 100%;
+}
+
+
+.subcaja-articulos i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -1px;
+    align-items: center;
+}
+
+.subcaja-articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 55%;
+}
+
+.precios,
+.descuentos {
+    width: 50%;
+}
+
+.contenedor {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* formulario */
+.create-form {
+    padding: 20px 15px;
+    margin-top: 10px;
+    align-content: center;
+    margin-top: 150px;
+}
+.control-formulario {
+margin-bottom: 15px;
+}
+
+.control-formulario label {
+   font-style: italic; 
+   margin-bottom: 5px;
+   display: block;
+}
+.control {
+    width: 100%;
+    padding: 5px;
+}
+.buttom-form {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* animaciones */
+.logo {
+    width: 100px;
+    animation: animacion-logo 1s linear infinite alternate;
+}
+@keyframes animacion-logo {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5)
+    }
+}
+/* tranicion */
+.descripciones {
+    opacity: 0;
+    transition:  opacity 0.5;
+    
+}
+
+.descripciones:hover {
+    opacity: 1;
+   
+}
+
+.articulos {
+background-color: grey;
+ box-shadow: none;
+ transition: box-shadow 0.5;
+}
+.articulos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+@media (max-width: 360px) {
+    .main-navbar,
+    .site,
+    .log-in {
+        display: none;
+        visibility: hidden;
+    }
+    .articulos {
+        visibility: visible;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        align-items: center;
+    }
+    header {
+        min-width: 500px
+} }
+@media (min-width: 769px) {
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        align-items: center;
+        max-width: 40%;
+    }
+    .imagenes {
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburger-bottom {
+        display: none;
+    }
+    
+    .site {
+        justify-content: space-between;
+    }
+    .main-header-top {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 360px;
+        text-align: right;
+    }
+    .hamburger-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+        position: absolute;
+        right: 10px;
+    }
+    .barra-busqueda {
+        position:absolute;
+        top: 55px;
+        left:300px
+        
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+}
+@media (min-width: 1200px) {
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        align-items: center;
+        max-width: 22.5%;
+        margin: 10px;
+    }
+    .logo {
+        width: 250px;
+    }
+    .main-header-top, .main-navbar{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .main-header-top {
+        align-items: center;
+    }
+    .main-navbar {
+        margin-top: 30px;
+    }
+    .copy-header {
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400px;
+        margin: 0;
+    }
+    .barra-busqueda {
+        position:absolute;
+        top: 55px;
+        left:470px
+        
+    }
+    .copy-header {
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+        position: absolute;
+        right: 100px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 18px;
+        
+    }
+
+    .right-navbar{
+
+        position: relative;
+        left: 19px;
+        top: 60px;
+     }
+     
+
+    .left-navbar {
+        position: relative;
+        right: 330px;
+        top: 60px;
+        font-size: 20px;
+        color: red;
+
+
+    }
+    .imagenes {
+        align-items: center;
+        justify-content: center;
+    }
+    .hamburger-bottom {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .site {
+        justify-self: space-between;
+    }
+    .fas.fa-truck {
+        position: absolute;
+        top: -480%;
+        
+        }
+
+} 
+.formulario-register {
+    display: block;
+    background-color: gray;
+}

@@ -1,0 +1,2 @@
+comando mkdir
+comando Cd 
