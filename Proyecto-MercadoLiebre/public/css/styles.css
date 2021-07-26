@@ -333,6 +333,9 @@ background-color: grey;
         max-width: 22.5%;
         margin: 10px;
     }
+    .subcaja-articulos {
+        max-width: 200px;
+    }
     .logo {
         width: 250px;
     }

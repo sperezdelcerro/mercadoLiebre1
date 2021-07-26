@@ -1,27 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/css/formularios.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="/css/formularios.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        </style>
     
-    <form action="/login.html" method="POST">
+    
+    <body>
+        <header class="main-header">
+            <div class="main-header-top">
+                <img src="/images/logo.jpg" class="logo">
+                <h2 class="copy-header">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </h2>
+            </div>
+            <a href="#" class="hamburger-button">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="main-navbar">
+                <ul class="left-navbar">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="right-navbar">
+                    <li><a href="#">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
+                    <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <a href="/views/home.html">Ver ejemplo 5</a>
+  <div class= formulario-login>
+    <form action="/resultado.html" method="GET">
         <p>
 
-            <input type="text" minlength= 5 name="nombre" required placeholder="Nombre de usuario">
+            <input type="text" minlength=5 name="nombre" required placeholder="Nombre de usuario">
         </p>
 
         <p>
-            <input type="password" minlength= 5  name="password" required placeholder="Elegí tu contraseña">
+            <input type="password" minlength=5 name="password" required placeholder="Elegí tu contraseña">
         </p>
 
-        <button  class= "button-login" type="submit"> Enviar </button>
+        <button class="button-login" type="submit"> Enviar </button>
+    </div>
 
 
-
+        </head>
+        <footer>
+            <div class="footer-flex">   
+                <div class=cuerpoTexto>
+                    <div class=iconos> <i class="fas fa-credit-card"></i> </div>
+                    <h3 class="texto">Pagá con tarjeta o en efectivo</h3>
+                    <div>
+                        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                            siempre es
+                            seguro!</p>
+                        <div class=iconos> <i class="fas fa-gift"></i> </div>
+                        <h3>Envío gratis desde $ 2.500</h3>
+                        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                            beneficio de
+                            Mercado Puntos.</p>
+                        <div class=iconos>
+                            <div class=iconos> <i class="fas fa-gift"></i> </div>
+                        </div>
+                        <h3>Seguridad, de principio a fin</h3>
+                        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                            protegid@.</p>
+                        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+                    </div>
+            </div>
+        </footer>
 </body>
 </html>
